@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="number" name="age" placeholder="age">
+    <button type="submit" id="elem">Check</button>
+    <script type="text/javascript">
+    var Age = document.querySelector('input');
+    var btn = document.querySelector('#elem');
+       function checkAge(){
+        if(+Age.value<=14){
+          alert('Вам до 14-ти включительно');
+        }
+        else if(+Age.value>=90){
+            alert('Вам от 90 включительно');
+        }
+        else{
+          alert('Вам в диапазоне от 14-ти до 90');   
+        }
+       }
+    btn.addEventListener('click',checkAge)
+    </script>
+  </body>
+</html>
